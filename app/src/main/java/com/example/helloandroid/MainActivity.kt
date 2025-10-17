@@ -88,19 +88,7 @@ class MainActivity : ComponentActivity() {
         var password by remember { mutableStateOf("") }
         var passwordVisible by remember { mutableStateOf(false) }
         Scaffold(
-            topBar = {
-                CenterAlignedTopAppBar(
-                    title = {
-                        Text("Login")
-                    },
-                    colors = TopAppBarDefaults.topAppBarColors(
-                        containerColor = Color.Black,
-                        titleContentColor = Color.White
-                    ),
 
-
-                    )
-            }
         ) { contentPadding ->
             Box(
                 modifier = Modifier
